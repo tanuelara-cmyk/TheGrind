@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>The Grind | Progress</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <div class="dashboard-page">
+
+        <!-- Sidebar -->
+        <aside class="sidebar">
+
+            <div class="sidebar-brand">
+
+                <span class="brand-mark">TG</span>
+
+                <div>
+                    <h2>The Grind</h2>
+                    <p>Stay consistent.</p>
+                </div>
+
+            </div>
+
+
+            <nav class="sidebar-nav">
+
+                <a href="dashboard.html">
+                    Dashboard
+                </a>
+
+                <a href="habits.html">
+                    Habits
+                </a>
+
+                <a href="progress.html" class="active">
+                    Progress
+                </a>
+
+                <a href="history.html">
+                    History
+                </a>
+
+            </nav>
+
+
+            <button id="logoutButton" class="logout-button">
+                Logout
+            </button>
+
+        </aside>
+
+
+        <!-- Main Content -->
+        <main class="dashboard-main">
+
+            <header class="dashboard-header">
+
+                <p class="eyebrow">
+                    YOUR PROGRESS
+                </p>
+
+                <h1>
+                    Track your consistency
+                </h1>
+
+                <p class="dashboard-subtitle">
+                    Every completed habit is a step forward.
+                </p>
+
+            </header>
+
+
+            <!-- Statistics -->
+            <section class="stats-grid">
+
+                <div class="stat-card">
+
+                    <p>Completed Today</p>
+
+                    <h2 id="completedToday">
+                        0
+                    </h2>
+
+                    <span>Habits completed</span>
+
+                </div>
+
+
+                <div class="stat-card">
+
+                    <p>Today's Goal</p>
+
+                    <h2 id="dailyGoal">
+                        0%
+                    </h2>
+
+                    <span>Daily completion</span>
+
+                </div>
+
+
+                <div class="stat-card">
+
+                    <p>Total Completions</p>
+
+                    <h2 id="totalCompletions">
+                        0
+                    </h2>
+
+                    <span>All-time</span>
+
+                </div>
+
+            </section>
+
+
+            <!-- Progress -->
+            <section class="progress-section">
+
+                <div class="section-heading">
+
+                    <div>
+
+                        <p class="eyebrow">
+                            OVERVIEW
+                        </p>
+
+                        <h2>
+                            Your consistency
+                        </h2>
+
+                    </div>
+
+                </div>
+
+
+                <div class="progress-card">
+
+                    <div class="progress-header">
+
+                        <span>
+                            Today's progress
+                        </span>
+
+                        <strong id="progressPercentage">
+                            0%
+                        </strong>
+
+                    </div>
+
+
+                    <div class="progress-bar">
+
+                        <div
+                            id="progressFill"
+                            class="progress-fill">
+                        </div>
+
+                    </div>
+
+
+                    <p id="progressMessage">
+                        Start completing your habits today.
+                    </p>
+
+                </div>
+
+            </section>
+
+        </main>
+
+    </div>
+
+
+    <script src="script.js/progress.js"></script>
+
+</body>
+
+</html>

@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>The Grind | Dashboard</title>
+
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+
+<body>
+
+    <div class="dashboard-page">
+
+
+        <!-- ================= SIDEBAR ================= -->
+
+        <aside class="sidebar">
+
+            <div class="sidebar-brand">
+
+                <span class="brand-mark">
+                    TG
+                </span>
+
+                <div>
+
+                    <h2>The Grind</h2>
+
+                    <p>Stay consistent.</p>
+
+                </div>
+
+            </div>
+
+
+            <!-- Navigation -->
+
+            <nav class="sidebar-nav">
+
+                <a href="dashboard.html" class="active">
+                    Dashboard
+                </a>
+
+                <a href="habits.html">
+                    Habits
+                </a>
+
+                <a href="progress.html">
+                    Progress
+                </a>
+
+                <a href="history.html">
+                    History
+                </a>
+
+            </nav>
+
+
+            <!-- Logout -->
+
+            <button
+                id="logoutButton"
+                class="logout-button"
+            >
+                Logout
+            </button>
+
+        </aside>
+
+
+
+        <!-- ================= MAIN CONTENT ================= -->
+
+        <main class="dashboard-main">
+
+
+            <!-- Header -->
+
+            <header class="dashboard-header">
+
+                <div>
+
+                    <p class="eyebrow">
+                        YOUR DASHBOARD
+                    </p>
+
+                    <h1>
+                        Welcome back,
+                        <span id="userName">User</span>
+                        👋
+                    </h1>
+
+                    <p class="dashboard-subtitle">
+                        Keep showing up. Small progress becomes big change.
+                    </p>
+
+                </div>
+
+            </header>
+
+
+
+            <!-- ================= STATISTICS ================= -->
+
+            <section class="stats-grid">
+
+
+                <!-- Total Habits -->
+
+                <div class="stat-card">
+
+                    <p>
+                        Total Habits
+                    </p>
+
+                    <h2 id="totalHabits">
+                        0
+                    </h2>
+
+                    <span>
+                        Active habits
+                    </span>
+
+                </div>
+
+
+
+                <!-- Completed Today -->
+
+                <div class="stat-card">
+
+                    <p>
+                        Completed Today
+                    </p>
+
+                    <h2 id="completedCount">
+                        0
+                    </h2>
+
+                    <span>
+                        Keep going
+                    </span>
+
+                </div>
+
+
+
+                <!-- Current Streak -->
+
+                <div class="stat-card">
+
+                    <p>
+                        Current Streak
+                    </p>
+
+                    <h2 id="currentStreak">
+                        0
+                    </h2>
+
+                    <span>
+                        Days 🔥
+                    </span>
+
+                </div>
+
+
+            </section>
+
+
+
+            <!-- ================= TODAY'S HABITS ================= -->
+
+            <section class="habits-section">
+
+
+                <!-- Section heading -->
+
+                <div class="section-heading">
+
+                    <div>
+
+                        <p class="eyebrow">
+                            TODAY
+                        </p>
+
+                        <h2>
+                            Your habits
+                        </h2>
+
+                    </div>
+
+
+                    <a
+                        href="habits.html"
+                        class="view-all"
+                    >
+                        View habits →
+                    </a>
+
+                </div>
+
+
+
+                <!-- Dynamic Habit List -->
+
+                <div
+                    id="habitList"
+                    class="habit-list"
+                >
+
+                    <p>
+                        Loading habits...
+                    </p>
+
+                </div>
+
+
+            </section>
+
+
+        </main>
+
+
+    </div>
+
+
+
+    <!-- Dashboard JavaScript -->
+
+    <script src="script.js/dashboard.js"></script>
+
+</body>
+
+</html>

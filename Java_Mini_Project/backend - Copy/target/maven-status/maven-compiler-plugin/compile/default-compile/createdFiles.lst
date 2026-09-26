@@ -1,0 +1,7 @@
+com\thegrind\backend\controller\UserController.class
+com\thegrind\backend\repository\HabitRepository.class
+com\thegrind\backend\controller\HabitController.class
+com\thegrind\backend\model\User.class
+com\thegrind\backend\BackendApplication.class
+com\thegrind\backend\model\Habit.class
+com\thegrind\backend\repository\UserRepository.class
