@@ -2,6 +2,7 @@
 
 The Grind is a full-stack habit tracking web application designed to help users build consistent habits, track daily progress, maintain streaks, and review their habit history.
 
+#
 🚀 Live Demo
 
 Frontend:
@@ -13,34 +14,76 @@ https://thegrind-production.up.railway.app
 GitHub:
 https://github.com/tanuelara-cmyk/TheGrind
 
-📌 Features
-🔐 User Registration and Login
-➕ Add custom habits
-📋 View all personal habits
-✅ Mark habits as completed
-↩️ Mark completed habits as pending
-🗑️ Delete habits
-🔥 Track current streak
-📊 View daily and total progress
-📅 View habit completion history
-💾 Store user and habit data in MySQL
-🌐 Deployed frontend and backend
-🛠️ Technology Stack
-Frontend
-HTML5
-CSS3
-JavaScript
-Vercel
-Backend
-Java
-Spring Boot
-Spring JDBC
-REST API
-Maven
-Database
-MySQL
-Railway MySQL
-Deployment
-Frontend: Vercel
-Backend: Railway
-Database: Railway MySQL
+## 🚀 Features
+
+- User Registration
+- User Login
+- Habit Creation
+- Mark habits as completed
+- Edit and Delete habits
+- Daily habit tracking
+- Progress tracking
+- Streak calculation
+- Simple and responsive UI
+- MySQL database for storing user and habit data
+- REST API using Spring Boot
+
+## 🛠️ Technologies Used
+
+### Frontend
+- HTML5
+- CSS3
+- JavaScript
+- Fetch API
+- DOM Manipulation
+- JSON
+
+### Backend
+- Java
+- Spring Boot
+- Spring Web
+- Spring JDBC
+- REST APIs
+- Maven
+- Embedded Tomcat
+
+### Database
+- MySQL
+- JDBC
+
+## 📁 Project Structure
+
+```text
+Java_Mini_Project/
+│
+├── backend - Copy/
+│   ├── pom.xml
+│   └── src/
+│       └── main/
+│           ├── java/
+│           │   └── com/thegrind/
+│           │       ├── TheGrindApplication.java
+│           │       ├── controller/
+│           │       ├── service/
+│           │       ├── repository/
+│           │       └── model/
+│           │
+│           └── resources/
+│               └── application.properties
+│
+└── Frontend/
+    ├── login.html
+    ├── register.html
+    ├── dashboard.html
+    ├── habits.html
+    ├── progress.html
+    │
+    ├── css/
+    │   └── style.css
+    │
+    └── js/
+        ├── login.js
+        ├── register.js
+        ├── dashboard.js
+        ├── habits.js
+        └── progress.js
