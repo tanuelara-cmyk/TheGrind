@@ -2,6 +2,8 @@ package com.thegrind.backend.controller;
 
 import com.thegrind.backend.model.User;
 import com.thegrind.backend.repository.UserRepository;
+import org.springframework.http.HttpStatus;
+import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 
 @RestController
@@ -16,34 +18,57 @@ public class UserController {
     }
 
     @PostMapping("/register")
-    public String register(@RequestBody User user) {
+    public ResponseEntity<?> register(@RequestBody User user) {
 
-        userRepository.saveUser(user);
+        try {
 
-        return "Registration successful";
+            userRepository.saveUser(user);
+
+            return ResponseEntity.ok(user);
+
+        } catch (Exception e) {
+
+            e.printStackTrace();
+
+            return ResponseEntity
+                    .status(HttpStatus.INTERNAL_SERVER_ERROR)
+                    .body("Registration failed: " + e.getMessage());
+        }
     }
 
     @PostMapping("/login")
-    public User login(@RequestBody User user) {
+    public ResponseEntity<?> login(@RequestBody User user) {
 
         try {
 
             User existingUser =
                     userRepository.findUserByEmail(user.getEmail());
 
+            if (existingUser == null) {
+
+                return ResponseEntity
+                        .status(HttpStatus.UNAUTHORIZED)
+                        .body("User not found");
+            }
+
             if (existingUser.getPassword().equals(user.getPassword())) {
 
-                return existingUser;
+                return ResponseEntity.ok(existingUser);
 
             } else {
 
-                return null;
+                return ResponseEntity
+                        .status(HttpStatus.UNAUTHORIZED)
+                        .body("Invalid password");
             }
 
         } catch (Exception e) {
 
-            return null;
+            e.printStackTrace();
+
+            return ResponseEntity
+                    .status(HttpStatus.INTERNAL_SERVER_ERROR)
+                    .body("Login failed: " + e.getMessage());
         }
     }
-  
 }
