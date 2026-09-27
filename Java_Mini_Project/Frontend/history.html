@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0"
+    >
+
+    <title>The Grind | History</title>
+
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+
+<body>
+
+    <div class="dashboard-page">
+
+
+        <!-- ================= SIDEBAR ================= -->
+
+        <aside class="sidebar">
+
+            <div class="sidebar-brand">
+
+                <span class="brand-mark">
+                    TG
+                </span>
+
+                <div>
+
+                    <h2>The Grind</h2>
+
+                    <p>Stay consistent.</p>
+
+                </div>
+
+            </div>
+
+
+            <!-- Navigation -->
+
+            <nav class="sidebar-nav">
+
+                <a href="dashboard.html">
+                    Dashboard
+                </a>
+
+                <a href="habits.html">
+                    Habits
+                </a>
+
+                <a href="progress.html">
+                    Progress
+                </a>
+
+                <a href="history.html" class="active">
+                    History
+                </a>
+
+            </nav>
+
+
+            <!-- Logout -->
+
+            <button
+                id="logoutButton"
+                class="logout-button"
+            >
+                Logout
+            </button>
+
+        </aside>
+
+
+
+        <!-- ================= MAIN CONTENT ================= -->
+
+        <main class="dashboard-main">
+
+
+            <!-- Header -->
+
+            <header class="dashboard-header">
+
+                <p class="eyebrow">
+                    YOUR HISTORY
+                </p>
+
+                <h1>
+                    Your consistency
+                </h1>
+
+                <p class="dashboard-subtitle">
+                    Look back at the habits you completed.
+                </p>
+
+            </header>
+
+
+
+            <!-- ================= HISTORY ================= -->
+
+            <section class="habits-section">
+
+                <div class="section-heading">
+
+                    <div>
+
+                        <p class="eyebrow">
+                            COMPLETIONS
+                        </p>
+
+                        <h2>
+                            Habit history
+                        </h2>
+
+                    </div>
+
+                </div>
+
+
+                <!-- History will be inserted here -->
+
+                <div
+                    id="historyList"
+                    class="habit-list"
+                >
+
+                    <p>
+                        Loading history...
+                    </p>
+
+                </div>
+
+
+            </section>
+
+
+        </main>
+
+
+    </div>
+
+
+
+    <!-- History JavaScript -->
+
+    <script src="script.js/history.js"></script>
+
+</body>
+
+</html>

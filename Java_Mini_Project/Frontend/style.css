@@ -1,0 +1,646 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background: #f5f3f0;
+    color: #211f1d;
+}
+
+.auth-page {
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+}
+
+.auth-card {
+    width: 100%;
+    max-width: 430px;
+    background: #ffffff;
+    border-radius: 24px;
+    padding: 42px;
+    box-shadow: 0 15px 45px rgba(0, 0, 0, 0.08);
+}
+
+.brand {
+    text-align: center;
+    margin-bottom: 35px;
+}
+
+.brand-mark {
+    display: inline-flex;
+    width: 48px;
+    height: 48px;
+    align-items: center;
+    justify-content: center;
+    border-radius: 14px;
+    background: #651f2b;
+    color: white;
+    font-weight: bold;
+    letter-spacing: 1px;
+    margin-bottom: 14px;
+}
+
+.brand h1 {
+    font-size: 28px;
+    margin-bottom: 7px;
+}
+
+.brand p {
+    color: #77716c;
+    font-size: 14px;
+}
+
+.auth-content h2 {
+    font-size: 25px;
+    margin-bottom: 7px;
+}
+
+.subtitle {
+    color: #77716c;
+    font-size: 14px;
+    margin-bottom: 25px;
+}
+
+.input-group {
+    margin-bottom: 18px;
+}
+
+.input-group label {
+    display: block;
+    font-size: 14px;
+    font-weight: 600;
+    margin-bottom: 7px;
+}
+
+.input-group input {
+    width: 100%;
+    padding: 13px 14px;
+    border: 1px solid #ddd8d3;
+    border-radius: 10px;
+    font-size: 14px;
+    outline: none;
+    transition: 0.2s;
+}
+
+.input-group input:focus {
+    border-color: #651f2b;
+    box-shadow: 0 0 0 3px rgba(101, 31, 43, 0.08);
+}
+
+.auth-button {
+    width: 100%;
+    border: none;
+    border-radius: 10px;
+    padding: 14px;
+    background: #651f2b;
+    color: white;
+    font-size: 15px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: 0.2s;
+}
+
+.auth-button:hover {
+    background: #4e1721;
+}
+
+.message {
+    min-height: 20px;
+    text-align: center;
+    margin-top: 14px;
+    font-size: 14px;
+}
+
+.switch-auth {
+    text-align: center;
+    margin-top: 25px;
+    color: #77716c;
+    font-size: 14px;
+}
+
+.switch-auth a {
+    color: #651f2b;
+    font-weight: 600;
+    text-decoration: none;
+}
+
+/* =========================
+   DASHBOARD
+========================= */
+
+.dashboard-page {
+    min-height: 100vh;
+    display: flex;
+    background: #f5f3f0;
+}
+
+
+/* Sidebar */
+
+.sidebar {
+    width: 245px;
+    min-height: 100vh;
+    background: #ffffff;
+    border-right: 1px solid #e7e2dd;
+    padding: 30px 20px;
+    display: flex;
+    flex-direction: column;
+}
+
+.sidebar-brand {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    padding: 0 10px;
+    margin-bottom: 45px;
+}
+
+.sidebar-brand .brand-mark {
+    width: 42px;
+    height: 42px;
+    margin: 0;
+    border-radius: 12px;
+    flex-shrink: 0;
+}
+
+.sidebar-brand h2 {
+    font-size: 17px;
+    margin-bottom: 3px;
+}
+
+.sidebar-brand p {
+    color: #88817b;
+    font-size: 12px;
+}
+
+
+/* Navigation */
+
+.sidebar-nav {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.sidebar-nav a {
+    text-decoration: none;
+    color: #6f6964;
+    padding: 12px 14px;
+    border-radius: 10px;
+    font-size: 14px;
+    transition: 0.2s;
+}
+
+.sidebar-nav a:hover {
+    background: #f7f2f0;
+    color: #651f2b;
+}
+
+.sidebar-nav a.active {
+    background: #651f2b;
+    color: #ffffff;
+}
+
+
+/* Logout */
+
+.logout-button {
+    margin-top: auto;
+    padding: 12px;
+    border: 1px solid #ddd8d3;
+    background: #ffffff;
+    border-radius: 10px;
+    cursor: pointer;
+    color: #651f2b;
+    font-weight: 600;
+}
+
+.logout-button:hover {
+    background: #f8f2f1;
+}
+
+
+/* Main */
+
+.dashboard-main {
+    flex: 1;
+    padding: 50px;
+    max-width: 1250px;
+}
+
+
+/* Header */
+
+.dashboard-header {
+    margin-bottom: 35px;
+}
+
+.eyebrow {
+    color: #651f2b;
+    font-size: 11px;
+    font-weight: 700;
+    letter-spacing: 1.5px;
+    margin-bottom: 8px;
+}
+
+.dashboard-header h1 {
+    font-size: 32px;
+    margin-bottom: 8px;
+}
+
+.dashboard-subtitle {
+    color: #77716c;
+    font-size: 14px;
+}
+
+
+/* Statistics */
+
+.stats-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 18px;
+    margin-bottom: 45px;
+}
+
+.stat-card {
+    background: #ffffff;
+    border: 1px solid #e7e2dd;
+    border-radius: 18px;
+    padding: 25px;
+}
+
+.stat-card p {
+    color: #77716c;
+    font-size: 13px;
+    margin-bottom: 12px;
+}
+
+.stat-card h2 {
+    font-size: 30px;
+    margin-bottom: 5px;
+}
+
+.stat-card span {
+    color: #99918b;
+    font-size: 12px;
+}
+
+
+/* Habits */
+
+.section-heading {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    margin-bottom: 18px;
+}
+
+.section-heading h2 {
+    font-size: 22px;
+}
+
+.view-all {
+    color: #651f2b;
+    text-decoration: none;
+    font-size: 13px;
+    font-weight: 600;
+}
+
+
+/* Habit list */
+
+.habit-list {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.habit-item {
+    background: #ffffff;
+    border: 1px solid #e7e2dd;
+    border-radius: 15px;
+    padding: 18px;
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.habit-icon {
+    width: 42px;
+    height: 42px;
+    border-radius: 12px;
+    background: #f7f1ef;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 19px;
+}
+
+.habit-info {
+    flex: 1;
+}
+
+.habit-info h3 {
+    font-size: 15px;
+    margin-bottom: 4px;
+}
+
+.habit-info p {
+    color: #88817b;
+    font-size: 12px;
+}
+
+.habit-status {
+    font-size: 12px;
+    color: #88817b;
+    background: #f5f3f0;
+    padding: 7px 11px;
+    border-radius: 20px;
+}
+
+
+/* Responsive */
+
+@media (max-width: 800px) {
+
+    .sidebar {
+        width: 190px;
+    }
+
+    .dashboard-main {
+        padding: 30px;
+    }
+
+    .stats-grid {
+        grid-template-columns: 1fr;
+    }
+
+}
+
+@media (max-width: 600px) {
+
+    .dashboard-page {
+        flex-direction: column;
+    }
+
+    .sidebar {
+        width: 100%;
+        min-height: auto;
+    }
+
+    .sidebar-nav {
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+
+    .dashboard-main {
+        padding: 25px 18px;
+    }
+
+}
+
+/* =========================
+   HABITS & PROGRESS
+   ========================= */
+
+.habit-status {
+    border: none;
+    cursor: pointer;
+    font-size: 12px;
+    color: #88817b;
+    background: #f5f3f0;
+    padding: 8px 13px;
+    border-radius: 20px;
+    transition: 0.2s;
+}
+
+.habit-status:hover {
+    background: #eee8e4;
+}
+
+.habit-status.completed {
+    background: #651f2b;
+    color: #ffffff;
+}
+
+.progress-section {
+    margin-top: 40px;
+}
+
+.progress-card {
+    background: #ffffff;
+    border: 1px solid #e7e2dd;
+    border-radius: 18px;
+    padding: 25px;
+}
+
+.progress-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 15px;
+}
+
+.progress-header span {
+    font-size: 14px;
+    color: #77716c;
+}
+
+.progress-header strong {
+    color: #651f2b;
+    font-size: 18px;
+}
+
+.progress-bar {
+    width: 100%;
+    height: 10px;
+    background: #eee9e5;
+    border-radius: 20px;
+    overflow: hidden;
+}
+
+.progress-fill {
+    width: 0%;
+    height: 100%;
+    background: #651f2b;
+    border-radius: 20px;
+    transition: width 0.3s ease;
+}
+
+.progress-card > p {
+    margin-top: 15px;
+    color: #88817b;
+    font-size: 13px;
+}
+
+/* ================= ADD HABIT FORM ================= */
+
+#addHabitForm {
+    display: flex;
+    flex-direction: column;
+    gap: 18px;
+    max-width: 650px;
+}
+
+
+/* Form group */
+
+.form-group {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+
+/* Labels */
+
+.form-group label {
+    font-size: 13px;
+    font-weight: 600;
+    color: #3d3936;
+}
+
+
+/* Input fields */
+
+.form-group input {
+    width: 100%;
+    padding: 13px 15px;
+    border: 1px solid #ddd8d3;
+    border-radius: 10px;
+    background: #faf9f7;
+    color: #211f1d;
+    font-size: 13px;
+    outline: none;
+    transition: 0.2s ease;
+}
+
+
+/* Input placeholder */
+
+.form-group input::placeholder {
+    color: #aaa39d;
+}
+
+
+/* Input focus */
+
+.form-group input:focus {
+    border-color: #651f2b;
+    background: #ffffff;
+    box-shadow: 0 0 0 3px rgba(101, 31, 43, 0.08);
+}
+
+
+/* Add Habit button */
+
+#addHabitForm .habit-status {
+    align-self: flex-start;
+    margin-top: 4px;
+    padding: 11px 20px;
+    font-size: 13px;
+    font-weight: 600;
+}
+
+
+/* Message */
+
+#habitMessage {
+    font-size: 13px;
+    color: #651f2b;
+}
+
+
+/* Mobile */
+
+@media (max-width: 600px) {
+
+    #addHabitForm {
+        max-width: 100%;
+    }
+
+    #addHabitForm .habit-status {
+        width: 100%;
+    }
+
+}
+
+/* ================= ICON PICKER ================= */
+
+.icon-picker {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin-top: 3px;
+}
+
+.icon-option {
+    width: 48px;
+    height: 48px;
+    border: 1px solid #ddd8d3;
+    border-radius: 12px;
+    background: #faf9f7;
+    font-size: 22px;
+    cursor: pointer;
+    transition: 0.2s ease;
+}
+
+.icon-option:hover {
+    background: #f7f1ef;
+    border-color: #651f2b;
+    transform: translateY(-2px);
+}
+
+.icon-option.selected {
+    background: #651f2b;
+    border-color: #651f2b;
+    box-shadow: 0 4px 10px rgba(101, 31, 43, 0.18);
+}
+/* Space between Add Habit and Today's Habits */
+
+#addHabitForm {
+    margin-bottom: 5px;
+}
+
+.habits-section + .habits-section {
+    margin-top: 55px;
+}
+
+/* ================= DELETE HABIT BUTTON ================= */
+
+.delete-habit {
+    border: 1px solid #d8c9c5;
+    background: #ffffff;
+    color: #651f2b;
+    padding: 8px 13px;
+    border-radius: 20px;
+    font-size: 12px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.2s ease;
+}
+
+.delete-habit:hover {
+    background: #651f2b;
+    color: #ffffff;
+    border-color: #651f2b;
+    transform: translateY(-1px);
+}
+
+/* ================= HISTORY DATE ================= */
+
+.history-date {
+    margin-top: 25px;
+    margin-bottom: 10px;
+    font-size: 13px;
+    font-weight: 700;
+    color: #651f2b;
+    letter-spacing: 0.3px;
+}
