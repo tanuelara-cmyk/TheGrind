@@ -30,9 +30,22 @@ loginForm.addEventListener("submit", async function (event) {
             }
         );
 
-        const user = await response.json();
+        const text = await response.text();
 
-        if (response.ok && user && user.name) {
+console.log("Backend status:", response.status);
+console.log("Backend response:", text);
+
+let user = null;
+
+if (text) {
+    try {
+        user = JSON.parse(text);
+    } catch (error) {
+        console.error("Response is not valid JSON:", text);
+    }
+}
+
+if (response.ok && user && user.name) {
 
             
            localStorage.setItem("loggedInUser", user.name);
