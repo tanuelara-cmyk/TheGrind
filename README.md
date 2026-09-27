@@ -35,6 +35,7 @@ https://github.com/tanuelara-cmyk/TheGrind
 ![The Grind Login Page]<img width="1902" height="922" alt="Screenshot 2026-09-28 000100" src="https://github.com/user-attachments/assets/4646cff0-f1a5-4336-b7fb-e260da242f0d" />
 
 ### Dashboard
+
 ![The Grind Dashboard Page]<img width="1892" height="917" alt="Screenshot 2026-09-28 000127" src="https://github.com/user-attachments/assets/c37984e0-1433-48bc-bbc5-bc1108adc452" />
 
 ## 🛠️ Technologies Used
