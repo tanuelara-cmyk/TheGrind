@@ -1,3 +1,4 @@
+const API_BASE_URL = "https://thegrind-production.up.railway.app";
 const userId = localStorage.getItem("loggedInUserId");
 
 const historyList =
@@ -34,7 +35,7 @@ async function loadHistory() {
     try {
 
         const response = await fetch(
-            `http://localhost:8081/api/habits/history/${userId}`
+            `${API_BASE_URL}/api/habits/history/${userId}`
         );
 
         if (!response.ok) {

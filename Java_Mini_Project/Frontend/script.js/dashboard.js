@@ -1,3 +1,4 @@
+const API_BASE_URL = "https://thegrind-production.up.railway.app";
 const userId = localStorage.getItem("loggedInUserId");
 
 const userName = document.getElementById("userName");
@@ -42,7 +43,7 @@ async function loadDashboard() {
 
         // Get habits from backend
         const response = await fetch(
-            `http://localhost:8081/api/habits/${userId}`
+            `${API_BASE_URL}/api/habits/${userId}`
         );
 
         if (!response.ok) {
@@ -76,7 +77,7 @@ async function loadDashboard() {
 
         // Get current streak
         const streakResponse = await fetch(
-            `http://localhost:8081/api/habits/progress/${userId}/streak`
+            `${API_BASE_URL}/api/habits/progress/${userId}/streak`
         );
 
         if (!streakResponse.ok) {
@@ -185,7 +186,7 @@ async function completeHabit(habitId) {
     try {
 
         const response = await fetch(
-            `http://localhost:8081/api/habits/${habitId}/complete`,
+            `${API_BASE_URL}/api/habits/${habitId}/complete`,
             {
                 method: "POST"
             }
@@ -219,7 +220,7 @@ async function uncompleteHabit(habitId) {
     try {
 
         const response = await fetch(
-            `http://localhost:8081/api/habits/${habitId}/complete`,
+            `${API_BASE_URL}/api/habits/${habitId}/complete`,
             {
                 method: "DELETE"
             }

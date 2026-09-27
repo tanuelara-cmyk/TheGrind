@@ -1,3 +1,4 @@
+const API_BASE_URL = "https://thegrind-production.up.railway.app";
 const userId = localStorage.getItem("loggedInUserId");
 
 const habitList = document.getElementById("habitList");
@@ -69,7 +70,7 @@ async function loadHabits() {
     try {
 
         const response = await fetch(
-            `http://localhost:8081/api/habits/${userId}`
+            `${API_BASE_URL}/api/habits/${userId}`
         );
 
         if (!response.ok) {
@@ -277,7 +278,7 @@ async function completeHabit(habitId) {
     try {
 
         const response = await fetch(
-            `http://localhost:8081/api/habits/${habitId}/complete`,
+            `${API_BASE_URL}/api/habits/${habitId}/complete`,
             {
                 method: "POST"
             }
@@ -315,7 +316,7 @@ async function uncompleteHabit(habitId) {
     try {
 
         const response = await fetch(
-            `http://localhost:8081/api/habits/${habitId}/complete`,
+            `${API_BASE_URL}/api/habits/${habitId}/complete`,
             {
                 method: "DELETE"
             }
@@ -364,7 +365,7 @@ async function deleteHabit(habitId) {
     try {
 
         const response = await fetch(
-            `http://localhost:8081/api/habits/${habitId}`,
+            `${API_BASE_URL}/api/habits/${habitId}`,
             {
                 method: "DELETE"
             }
@@ -469,7 +470,7 @@ addHabitForm.addEventListener(
 
             const response =
                 await fetch(
-                    "http://localhost:8081/api/habits/add",
+                    `${API_BASE_URL}/api/habits/add`,
                     {
                         method: "POST",
 

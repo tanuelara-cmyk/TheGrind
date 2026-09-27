@@ -1,3 +1,4 @@
+const API_BASE_URL = "https://thegrind-production.up.railway.app";
 const userId = localStorage.getItem("loggedInUserId");
 
 const completedToday =
@@ -50,7 +51,7 @@ async function loadProgress() {
 
         // Get all habits
         const habitsResponse = await fetch(
-            `http://localhost:8081/api/habits/${userId}`
+            `${API_BASE_URL}/api/habits/${userId}`
         );
 
         if (!habitsResponse.ok) {
@@ -63,7 +64,7 @@ async function loadProgress() {
 
         // Get completed habits today
         const todayResponse = await fetch(
-            `http://localhost:8081/api/habits/progress/${userId}`
+            `${API_BASE_URL}/api/habits/progress/${userId}`
         );
 
         if (!todayResponse.ok) {
@@ -78,7 +79,7 @@ async function loadProgress() {
 
         // Get total completions
         const totalResponse = await fetch(
-            `http://localhost:8081/api/habits/progress/${userId}/total`
+            `${API_BASE_URL}/api/habits/progress/${userId}/total`
         );
 
         if (!totalResponse.ok) {

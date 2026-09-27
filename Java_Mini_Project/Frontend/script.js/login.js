@@ -1,3 +1,4 @@
+const API_BASE_URL = "https://thegrind-production.up.railway.app";
 const loginForm = document.getElementById("loginForm");
 const message = document.getElementById("message");
 
@@ -14,7 +15,7 @@ loginForm.addEventListener("submit", async function (event) {
     try {
 
         const response = await fetch(
-            "http://localhost:8081/api/users/login",
+            `${API_BASE_URL}/api/users/login`,
             {
                 method: "POST",
 

@@ -1,3 +1,4 @@
+const API_BASE_URL = "https://thegrind-production.up.railway.app";
 const registerForm = document.getElementById("registerForm");
 const message = document.getElementById("message");
 
@@ -13,7 +14,7 @@ registerForm.addEventListener("submit", async function (event) {
 
     try {
 
-        const response = await fetch("http://localhost:8081/api/users/register", {
+        const response = await fetch(`${API_BASE_URL}/api/users/register`, {
             method: "POST",
             headers: {
                 "Content-Type": "application/json"
