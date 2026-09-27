@@ -28,6 +28,16 @@ https://github.com/tanuelara-cmyk/TheGrind
 - MySQL database for storing user and habit data
 - REST API using Spring Boot
 
+## 📸 Screenshots
+
+### 🔐 Login Page
+
+![The Grind Login Page]("C:\Users\tanu\OneDrive\Pictures\Screenshots\Screenshot 2026-09-28 000100.png")
+
+### 📊 Dashboard
+
+![The Grind Dashboard]("C:\Users\tanu\OneDrive\Pictures\Screenshots\Screenshot 2026-09-28 000127.png")
+
 ## 🛠️ Technologies Used
 
 ### Frontend
@@ -87,17 +97,17 @@ Java_Mini_Project/
         ├── dashboard.js
         ├── habits.js
         └── progress.js
-##
 
 
+```
 
-🎯 Project Objective
+## 🎯 Project Objective
 
 The main objective of The Grind is to understand how a frontend, Java backend, REST APIs, and a relational database work together to create a complete full-stack web application.
 
-👩‍💻 Developed By
+## 👩‍💻 Developed By
 
-Tanu Yadav
+**Tanu Yadav**
 
-Computer Engineering Student
+Computer Engineering Student  
 A. P. Shah Institute of Technology
