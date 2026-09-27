@@ -87,3 +87,17 @@ Java_Mini_Project/
         ├── dashboard.js
         ├── habits.js
         └── progress.js
+##
+
+
+
+🎯 Project Objective
+
+The main objective of The Grind is to understand how a frontend, Java backend, REST APIs, and a relational database work together to create a complete full-stack web application.
+
+👩‍💻 Developed By
+
+Tanu Yadav
+
+Computer Engineering Student
+A. P. Shah Institute of Technology
