@@ -6,10 +6,7 @@ The Grind is a full-stack habit tracking web application designed to help users 
 🚀 Live Demo
 
 Frontend:
-https://the-grind-eta.vercel.app/
-
-Backend:
-https://thegrind-production.up.railway.app
+the-grind-r7wr-git-main-tanuelara-8264.vercel.app
 
 GitHub:
 https://github.com/tanuelara-cmyk/TheGrind
