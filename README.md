@@ -32,11 +32,11 @@ https://github.com/tanuelara-cmyk/TheGrind
 
 ### 🔐 Login Page
 
-![The Grind Login Page]("C:\Users\tanu\OneDrive\Pictures\Screenshots\Screenshot 2026-09-28 000100.png")
+![The Grind Login Page]"C:\Users\tanu\OneDrive\Pictures\Screenshots\Screenshot 2026-09-28 000100.png"
 
 ### 📊 Dashboard
 
-![The Grind Dashboard]("C:\Users\tanu\OneDrive\Pictures\Screenshots\Screenshot 2026-09-28 000127.png")
+![The Grind Dashboard]"C:\Users\tanu\OneDrive\Pictures\Screenshots\Screenshot 2026-09-28 000127.png"
 
 ## 🛠️ Technologies Used
 
@@ -107,7 +107,11 @@ The main objective of The Grind is to understand how a frontend, Java backend, R
 
 ## 👩‍💻 Developed By
 
-**Tanu Yadav**
+| Team Member |
+|-------------|
+| Tanu Yadav |
+| Devshree Surve |
+| Ritika Singh |
 
-Computer Engineering Student  
-A. P. Shah Institute of Technology
+**Computer Engineering**  
+**A. P. Shah Institute of Technology**
