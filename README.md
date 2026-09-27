@@ -1,4 +1,4 @@
-# TheGrind
+<img width="1902" height="922" alt="Screenshot 2026-09-28 000100" src="https://github.com/user-attachments/assets/4646cff0-f1a5-4336-b7fb-e260da242f0d" /># TheGrind
 
 The Grind is a full-stack habit tracking web application designed to help users build consistent habits, track daily progress, maintain streaks, and review their habit history.
 
@@ -32,11 +32,7 @@ https://github.com/tanuelara-cmyk/TheGrind
 
 ### 🔐 Login Page
 
-![The Grind Login Page]"C:\Users\tanu\OneDrive\Pictures\Screenshots\Screenshot 2026-09-28 000100.png"
-
-### 📊 Dashboard
-
-![The Grind Dashboard]"C:\Users\tanu\OneDrive\Pictures\Screenshots\Screenshot 2026-09-28 000127.png"
+![The Grind Login Page]<img width="1892" height="917" alt="Screenshot 2026-09-28 000127" src="https://github.com/user-attachments/assets/30377f78-1979-4400-b134-ced4dab4fad8" />
 
 ## 🛠️ Technologies Used
 
